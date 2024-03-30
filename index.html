@@ -1,28 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Wyśrodkowanie poziome */
+            align-items: center; /* Wyśrodkowanie pionowe */
+            background-color: hsl(212, 45%, 89%);
+            font-family: 'Outfit', sans-serif;
+        }
+        .container {
+            background-color: hsl(0, 0%, 100%);
+           padding: 20px;
+            border-radius: 20px; /* Zaokrąglenie rogów o promieniu 10 pikseli */
+            width: 30%;
+            height: auto;
+            margin: 50px;
+        ;
+        }
+        .qr-code {
+            width: 455px;
+            display: flex;
+            justify-content: center; /* Wyśrodkowanie poziome */
+            align-items: center; /* Wyśrodkowanie pionowe */
+            border-radius: 20px; /* Zaokrąglenie rogów o promieniu 10 pikseli */
+        }
+        p {
+            color: gray; /* Ustawienie koloru tekstu na niebieski dla zdania z identyfikatorem 'unique-sentence' */
+            text-align: center;
+        }
+        .main-header {text-align: center;
+            }
+
+    </style>
 </head>
 <body>
+<div class="container">
+    <img class="qr-code" src="images/image-qr-code.png" alt="Code QR">
+    <h1 class="main-header"> Improve your front-end <br> skills by building projects </h1>
+    <p>Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level</p>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Karolina</a>.
+</div>
 </body>
 </html>
